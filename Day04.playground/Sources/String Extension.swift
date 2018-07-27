@@ -23,9 +23,7 @@ public extension String {
         let textCollection = self.components(separatedBy: " ")
         guard textCollection.count > 1 else { return false } // TODO:- Remove this line
         guard textCollection.count == 2 else {
-            
-            // TODO:- Write code to check if more than 2
-            
+                      
             for index0 in 0..<textCollection.count {
                 for index1 in (index0 + 1)..<textCollection.count {
                     if textCollection[index0].characterSet.sorted() == textCollection[index1].characterSet.sorted() {
